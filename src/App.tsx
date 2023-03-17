@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Chart from "./Chart";
+import Dashboard from "./Dashboard";
 
 function App() {
-  return (
-      <div>
-        <Chart/>
-      </div>
-  );
+    return (
+        <div>
+            <Dashboard/>
+        </div>
+    );
 }
 
 export default App;

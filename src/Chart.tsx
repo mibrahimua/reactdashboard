@@ -1,7 +1,7 @@
 import {useTheme} from "@mui/material";
 import React from "react";
-import {Title} from "@mui/icons-material";
 import {Label, Line, LineChart, ResponsiveContainer, XAxis, YAxis} from "recharts";
+import Title from "./Title";
 
 function createData(time: string, amount?: number) {
     return {time, amount};
@@ -52,7 +52,7 @@ export default function Chart() {
                                 fill: theme.palette.text.primary,
                                 ...theme.typography.body1,
                             }}
-                        >Sales $</Label>
+                        >Sales ($)</Label>
                     </YAxis>
                     <Line
                         isAnimationActive={false}
@@ -61,7 +61,6 @@ export default function Chart() {
                         stroke={theme.palette.primary.main}
                         dot={false}
                     />
-
                 </LineChart>
             </ResponsiveContainer>
         </React.Fragment>
